@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>专利 2 | 卢丹琪</title>
+    <meta
+      name="description"
+      content="基于多层级特征融合与冗余抑制的高效神经隐式语义 SLAM 方法。"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body
+    class="detail-page"
+    data-lang="zh"
+    data-title-zh="专利 2 | 卢丹琪"
+    data-title-en="Patent 2 | Danqi Lu"
+  >
+    <header class="site-header">
+      <a class="brand" href="index.html#top">
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html#intro">
+            <span class="lang zh">个人简介</span>
+            <span class="lang en">Introduction</span>
+          </a>
+          <a href="index.html#education">
+            <span class="lang zh">学习经历</span>
+            <span class="lang en">Education</span>
+          </a>
+          <a href="index.html#works">
+            <span class="lang zh">研究成果</span>
+            <span class="lang en">Publications</span>
+          </a>
+          <a href="index.html#patents">
+            <span class="lang zh">专利</span>
+            <span class="lang en">Patents</span>
+          </a>
+          <a href="index.html#awards">
+            <span class="lang zh">获奖情况</span>
+            <span class="lang en">Honors</span>
+          </a>
+        </nav>
+        <div class="language-switch" aria-label="语言切换">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <a class="back-link" href="index.html#patents">
+          <span class="lang zh">返回专利列表</span>
+          <span class="lang en">Back to Patents</span>
+        </a>
+        <h1>
+          <span class="lang zh">基于多层级特征融合与冗余抑制的高效神经隐式语义 SLAM 方法</span>
+          <span class="lang en">Efficient Neural Implicit Semantic SLAM with Multi-Tier Feature Fusion and Redundancy Suppression</span>
+        </h1>
+        <p class="detail-meta">
+          <span class="lang zh">方向：神经隐式语义 SLAM、特征冗余抑制、多层级特征融合</span>
+          <span class="lang en">Area: Neural implicit semantic SLAM, feature redundancy suppression, multi-tier feature fusion</span>
+        </p>
+      </section>
+
+      <section class="detail-content" aria-label="专利详情">
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">技术概述</span>
+            <span class="lang en">Technical Overview</span>
+          </h2>
+          <p>
+            <span class="lang zh">该方法以 RGB-D 图像序列为输入，依次执行多模态特征提取、特征冗余抑制、多层级特征融合、隐式表示解码和联合优化。与直接累积和融合原始高维语义特征的方式不同，该方法先构建显式语义原型空间，将当前帧或关键帧产生的语义特征压缩映射到可动态更新的原型空间中。</span>
+            <span class="lang en">This method takes RGB-D image sequences as input and performs multimodal feature extraction, feature redundancy suppression, multi-tier feature fusion, implicit representation decoding, and joint optimization. Unlike methods that directly accumulate and fuse high-dimensional semantic features, it first builds an explicit semantic prototype space and maps semantic features from current or key frames into dynamically updated prototypes.</span>
+          </p>
+          <p>
+            <span class="lang zh">压缩后的语义表示继续与几何特征、外观特征进行全局跨模态融合、局部语义增强和动态门控融合，并通过体渲染与联合优化反向更新相机位姿、隐式地图、融合模块和语义原型空间。</span>
+            <span class="lang en">The compressed semantic representation is then fused with geometric and appearance features through global cross-modal fusion, local semantic enhancement, and dynamic gating. Volume rendering and joint optimization update camera poses, implicit maps, fusion modules, and the semantic prototype space in a closed loop.</span>
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">方法流程</span>
+            <span class="lang en">Workflow</span>
+          </h2>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">从 RGB-D 输入中提取几何、语义和外观特征，为定位、建图和语义理解提供统一输入。</span>
+              <span class="lang en">Extract geometry, semantic, and appearance features from RGB-D inputs as a unified basis for localization, mapping, and semantic understanding.</span>
+            </li>
+            <li>
+              <span class="lang zh">初始化并自适应更新显式语义原型空间，将相似高维语义特征压缩至稳定原型。</span>
+              <span class="lang en">Initialize and adaptively update an explicit semantic prototype space, compressing similar high-dimensional semantic features into stable prototypes.</span>
+            </li>
+            <li>
+              <span class="lang zh">基于压缩语义特征执行全局跨模态融合、局部语义增强和动态门控融合。</span>
+              <span class="lang en">Perform global cross-modal fusion, local semantic enhancement, and dynamic gated fusion based on compressed semantic features.</span>
+            </li>
+            <li>
+              <span class="lang zh">通过隐式表示解码和体渲染输出颜色、深度和语义预测结果。</span>
+              <span class="lang en">Decode implicit representations and use volume rendering to produce color, depth, and semantic predictions.</span>
+            </li>
+            <li>
+              <span class="lang zh">联合优化相机位姿、隐式场参数、融合模块参数和语义原型空间。</span>
+              <span class="lang en">Jointly optimize camera poses, implicit field parameters, fusion modules, and the semantic prototype space.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">创新点</span>
+            <span class="lang en">Key Innovations</span>
+          </h2>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">面向神经隐式语义 SLAM 的特征冗余抑制机制，降低语义特征空间持续膨胀带来的存储和计算开销。</span>
+              <span class="lang en">A feature redundancy suppression mechanism for neural implicit semantic SLAM reduces storage and computation caused by continuously expanding semantic feature spaces.</span>
+            </li>
+            <li>
+              <span class="lang zh">显式语义原型空间自适应更新，使原型空间随场景观察逐步稳定和细化。</span>
+              <span class="lang en">Adaptive updating of the explicit semantic prototype space allows prototypes to stabilize and refine with scene observations.</span>
+            </li>
+            <li>
+              <span class="lang zh">基于压缩语义特征的多层级跨模态融合，在减少冗余的同时保持场景级语义一致性和局部边界细节。</span>
+              <span class="lang en">Multi-tier cross-modal fusion based on compressed semantic features preserves scene-level semantic consistency and local boundary details while reducing redundancy.</span>
+            </li>
+            <li>
+              <span class="lang zh">基于可靠性指标的动态门控权重生成，使不同空间位置自动选择更可靠的模态信息。</span>
+              <span class="lang en">Reliability-aware dynamic gating lets different spatial positions select more reliable modalities automatically.</span>
+            </li>
+            <li>
+              <span class="lang zh">冗余抑制、特征融合、隐式解码和位姿估计的闭环联合优化，同时提升定位、建图、语义预测和运行效率。</span>
+              <span class="lang en">Closed-loop joint optimization of redundancy suppression, feature fusion, implicit decoding, and pose estimation improves localization, mapping, semantic prediction, and runtime efficiency.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        ©
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </span>
+      <span>
+        <span class="lang zh">深圳大学人工智能学院</span>
+        <span class="lang en">School of Artificial Intelligence, Shenzhen University</span>
+      </span>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

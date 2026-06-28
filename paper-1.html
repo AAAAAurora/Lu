@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>论文 1 | 卢丹琪</title>
+    <meta
+      name="description"
+      content="MTE-SLAM: Multi-Tier Feature Fusion for Efficient Neural Semantic SLAM 论文详情。"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body
+    class="detail-page"
+    data-lang="zh"
+    data-title-zh="论文 1 | 卢丹琪"
+    data-title-en="Publication 1 | Danqi Lu"
+  >
+    <header class="site-header">
+      <a class="brand" href="index.html#top">
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html#intro">
+            <span class="lang zh">个人简介</span>
+            <span class="lang en">Introduction</span>
+          </a>
+          <a href="index.html#education">
+            <span class="lang zh">学习经历</span>
+            <span class="lang en">Education</span>
+          </a>
+          <a href="index.html#works">
+            <span class="lang zh">研究成果</span>
+            <span class="lang en">Publications</span>
+          </a>
+          <a href="index.html#patents">
+            <span class="lang zh">专利</span>
+            <span class="lang en">Patents</span>
+          </a>
+          <a href="index.html#awards">
+            <span class="lang zh">获奖情况</span>
+            <span class="lang en">Honors</span>
+          </a>
+        </nav>
+        <div class="language-switch" aria-label="语言切换">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <a class="back-link" href="index.html#works">
+          <span class="lang zh">返回研究成果</span>
+          <span class="lang en">Back to Publications</span>
+        </a>
+        <h1>MTE-SLAM: Multi-Tier Feature Fusion for Efficient Neural Semantic SLAM</h1>
+        <div class="detail-meta-row">
+          <p class="detail-meta">
+            <span class="lang zh">论文 1 · ICRA 2026 · 神经语义 SLAM</span>
+            <span class="lang en">Publication 1 · ICRA 2026 · Neural Semantic SLAM</span>
+          </p>
+          <a class="detail-pdf-link" href="paper-1.html">
+            <span class="lang zh">打开论文 PDF</span>
+            <span class="lang en">Open PDF</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="detail-content" aria-label="论文详情">
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">论文概述</span>
+            <span class="lang en">Overview</span>
+          </h2>
+          <p>
+            <span class="lang zh">MTE-SLAM 面向 RGB-D 语义 SLAM 任务，提出多层级特征融合框架，将几何、语义与外观信息在全局和局部尺度上协同建模。该方法通过全局跨模态注意力增强场景级语义一致性，并利用局部增强与动态门控改善物体边界、细小结构和语义区域的清晰度。</span>
+            <span class="lang en">MTE-SLAM is designed for RGB-D semantic SLAM. It introduces a multi-tier feature fusion framework that jointly models geometry, semantics, and appearance at global and local scales. Global cross-modal attention improves scene-level semantic consistency, while local enhancement and dynamic gating improve object boundaries, fine structures, and semantic regions.</span>
+            <span class="lang zh">为降低在线建图中的冗余特征累积，论文进一步设计特征冗余抑制模块，根据特征重要性和时序变化自适应压缩表示。在 Replica 和 ScanNet 数据集上的实验显示，该方法在跟踪、重建、语义分割与运行效率之间取得良好平衡。</span>
+            <span class="lang en">To reduce redundant feature accumulation during online mapping, the paper further designs a feature redundancy suppressor that adaptively compresses representations according to feature importance and temporal variation. Experiments on Replica and ScanNet show a strong balance among tracking, reconstruction, semantic segmentation, and runtime efficiency.</span>
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">方法流程</span>
+            <span class="lang en">Method Pipeline</span>
+          </h2>
+          <div class="detail-media">
+            <img src="assets/mte-slam-flow.png" alt="MTE-SLAM 方法流程图" />
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">关键贡献</span>
+            <span class="lang en">Key Contributions</span>
+          </h2>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">提出多层级特征融合机制，在全局语义一致性和局部边界细节之间取得平衡。</span>
+              <span class="lang en">Introduces multi-tier feature fusion to balance global semantic consistency and local boundary details.</span>
+            </li>
+            <li>
+              <span class="lang zh">通过动态门控融合不同模态信息，使几何、语义和外观特征根据场景位置自适应协同。</span>
+              <span class="lang en">Uses dynamic gating to adaptively coordinate geometry, semantic, and appearance features across scene locations.</span>
+            </li>
+            <li>
+              <span class="lang zh">设计特征冗余抑制模块，降低在线神经隐式 SLAM 中的冗余特征累积和计算开销。</span>
+              <span class="lang en">Designs a feature redundancy suppressor to reduce redundant feature accumulation and computation in online neural implicit SLAM.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        ©
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </span>
+      <span>
+        <span class="lang zh">深圳大学人工智能学院</span>
+        <span class="lang en">School of Artificial Intelligence, Shenzhen University</span>
+      </span>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

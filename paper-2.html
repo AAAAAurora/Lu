@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>论文 2 | 卢丹琪</title>
+    <meta
+      name="description"
+      content="Hierarchical Multi-View Alignment with Adaptive Prototype Compression 论文详情。"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body
+    class="detail-page"
+    data-lang="zh"
+    data-title-zh="论文 2 | 卢丹琪"
+    data-title-en="Publication 2 | Danqi Lu"
+  >
+    <header class="site-header">
+      <a class="brand" href="index.html#top">
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html#intro">
+            <span class="lang zh">个人简介</span>
+            <span class="lang en">Introduction</span>
+          </a>
+          <a href="index.html#education">
+            <span class="lang zh">学习经历</span>
+            <span class="lang en">Education</span>
+          </a>
+          <a href="index.html#works">
+            <span class="lang zh">研究成果</span>
+            <span class="lang en">Publications</span>
+          </a>
+          <a href="index.html#patents">
+            <span class="lang zh">专利</span>
+            <span class="lang en">Patents</span>
+          </a>
+          <a href="index.html#awards">
+            <span class="lang zh">获奖情况</span>
+            <span class="lang en">Honors</span>
+          </a>
+        </nav>
+        <div class="language-switch" aria-label="语言切换">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <a class="back-link" href="index.html#works">
+          <span class="lang zh">返回研究成果</span>
+          <span class="lang en">Back to Publications</span>
+        </a>
+        <h1>Hierarchical Multi-View Alignment with Adaptive Prototype Compression</h1>
+        <div class="detail-meta-row">
+          <p class="detail-meta">
+            <span class="lang zh">论文 2 · Pattern Recognition · 三维语义场景理解</span>
+            <span class="lang en">Publication 2 · Pattern Recognition · 3D Semantic Scene Understanding</span>
+          </p>
+          <a class="detail-pdf-link" href="paper-2.html">
+            <span class="lang zh">打开论文 PDF</span>
+            <span class="lang en">Open PDF</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="detail-content" aria-label="论文详情">
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">论文概述</span>
+            <span class="lang en">Overview</span>
+          </h2>
+          <p>
+            <span class="lang zh">该研究将语义三维场景理解建模为层次化多视图对齐问题，围绕几何结构、视觉外观与语义线索之间的分布差异和空间可靠性变化展开。方法在全局层面使用跨视图注意力完成几何引导的语义增强与语义感知的外观细化，在局部层面通过空间自适应门控动态调节不同视图的贡献。</span>
+            <span class="lang en">This work formulates semantic 3D scene understanding as a hierarchical multi-view alignment problem across geometry, appearance, and semantic cues. It uses cross-view attention for geometry-guided semantic enhancement and semantic-aware appearance refinement, while local spatially adaptive gating dynamically balances contributions from different views.</span>
+            <span class="lang zh">针对迭代优化过程中出现的特征漂移和冗余增长，工作引入自适应原型压缩机制，将新特征锚定到紧凑且动态更新的原型集合中，从而提升语义保真度、结构连贯性与运行效率。</span>
+            <span class="lang en">To address feature drift and redundancy growth during iterative optimization, the method introduces adaptive prototype compression that anchors new features to a compact and dynamically updated prototype set, improving semantic fidelity, structural coherence, and efficiency.</span>
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">方法流程</span>
+            <span class="lang en">Method Pipeline</span>
+          </h2>
+          <div class="detail-media">
+            <img
+              src="assets/multiview-flow.png"
+              alt="层次化多视图对齐与自适应原型压缩流程图"
+            />
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">关键贡献</span>
+            <span class="lang en">Key Contributions</span>
+          </h2>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">提出层次化多视图对齐框架，联合建模几何结构、视觉外观与语义线索。</span>
+              <span class="lang en">Proposes a hierarchical multi-view alignment framework that jointly models geometry, appearance, and semantic cues.</span>
+            </li>
+            <li>
+              <span class="lang zh">通过全局跨视图注意力和局部自适应门控，提升语义区域的一致性和结构表达。</span>
+              <span class="lang en">Improves semantic consistency and structural representation through global cross-view attention and local adaptive gating.</span>
+            </li>
+            <li>
+              <span class="lang zh">引入自适应原型压缩机制，缓解特征漂移和冗余增长问题。</span>
+              <span class="lang en">Introduces adaptive prototype compression to mitigate feature drift and redundancy growth.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        ©
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </span>
+      <span>
+        <span class="lang zh">深圳大学人工智能学院</span>
+        <span class="lang en">School of Artificial Intelligence, Shenzhen University</span>
+      </span>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
