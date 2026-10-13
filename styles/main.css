@@ -461,6 +461,22 @@ p {
   font-weight: 760;
 }
 
+.paper-authors {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.paper-authors > * {
+  white-space: nowrap;
+}
+
+.paper-authors .author-self {
+  color: var(--accent);
+  font-weight: 760;
+}
+
 .work-subtitle {
   margin-top: -4px;
   margin-bottom: 12px;
