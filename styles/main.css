@@ -1,10 +1,10 @@
 :root {
   color-scheme: dark;
-  --ink: #eef5f8;
-  --text: #d9e4ea;
-  --muted: #a9b7c2;
+  --ink: #ffffff;
+  --text: #ffffff;
+  --muted: #ffffff;
   --line: rgba(230, 238, 242, 0.2);
-  --accent: #8bd3dc;
+  --accent: #ffffff;
   --soft: rgba(12, 23, 30, 0.42);
   --canvas: #071017;
   --backdrop: rgba(5, 11, 16, 0.72);
@@ -15,7 +15,7 @@
   --selection-ring: rgba(139, 211, 220, 0.62);
   --accent-line: rgba(139, 211, 220, 0.42);
   --media-shadow: rgba(0, 0, 0, 0.18);
-  --separator: rgba(169, 183, 194, 0.55);
+  --separator: #ffffff;
   --toggle-surface: #142730;
   --author-brush: rgba(74, 181, 183, 0.38);
   --author-brush-edge: rgba(74, 181, 183, 0.12);
@@ -24,11 +24,11 @@
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --ink: #102232;
-  --text: #182c3c;
-  --muted: #20313d;
+  --ink: #000000;
+  --text: #000000;
+  --muted: #000000;
   --line: rgba(51, 77, 94, 0.2);
-  --accent: #06323b;
+  --accent: #000000;
   --soft: rgba(229, 239, 244, 0.72);
   --canvas: #f7fafc;
   --backdrop: rgba(249, 251, 253, 0.60);
@@ -39,7 +39,7 @@
   --selection-ring: rgba(21, 100, 117, 0.4);
   --accent-line: rgba(21, 100, 117, 0.36);
   --media-shadow: rgba(33, 58, 73, 0.1);
-  --separator: rgba(73, 98, 115, 0.55);
+  --separator: #000000;
   --toggle-surface: #ffffff;
   --author-brush: rgba(244, 194, 66, 0.64);
   --author-brush-edge: rgba(244, 194, 66, 0.22);
@@ -293,13 +293,6 @@ p {
   padding-left: 1.25rem;
   color: var(--text);
   font-size: 18px;
-}
-
-.keywords {
-  margin-top: 18px;
-  color: var(--accent);
-  font-size: 17px;
-  font-weight: 700;
 }
 
 .award-list {
@@ -777,7 +770,7 @@ body[data-lang="en"] .work-subtitle {
 :root[data-theme="light"] .theme-option[data-set-theme="light"] {
   border-color: #d5ab56;
   background: #f7e5b6;
-  color: #845000;
+  color: var(--ink);
 }
 
 .theme-option:focus-visible {
