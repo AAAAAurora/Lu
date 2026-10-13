@@ -342,6 +342,11 @@ p {
   padding-top: 4px;
 }
 
+.work-figure-single {
+  align-self: center;
+  padding-top: 0;
+}
+
 .work-figure img,
 .work-figure video {
   width: 100%;
