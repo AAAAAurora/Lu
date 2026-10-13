@@ -520,10 +520,10 @@ body[data-lang="en"] .work-subtitle {
 }
 
 .patent-item {
-  position: relative;
   display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 32px;
   padding: 22px 0;
   border-top: 1px solid var(--line);
 }
@@ -537,40 +537,34 @@ body[data-lang="en"] .work-subtitle {
   padding-bottom: 0;
 }
 
+.patent-body {
+  min-width: 0;
+}
+
 .patent-item h3 {
-  margin-top: 0;
+  margin: 0 0 8px;
   font-size: 24px;
-}
-
-.patent-number {
-  position: relative;
-  color: var(--accent);
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.patent-number::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  width: 1px;
-  height: calc(100% - 18px);
-  min-height: 74px;
-  background: var(--accent-line);
+  line-height: 1.45;
 }
 
 .patent-field {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   color: var(--muted);
   font-size: 15px;
   font-weight: 720;
 }
 
-.patent-body p:not(.patent-field) {
-  color: var(--text);
+.patent-body .paper-authors {
+  margin-bottom: 0;
+}
+
+.patent-link {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: 8px;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 .detail-page .nav a {
@@ -895,8 +889,8 @@ body[data-lang="en"] .work-subtitle {
   }
 
   .patent-item {
-    grid-template-columns: 56px minmax(0, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .timeline {
@@ -928,12 +922,4 @@ body[data-lang="en"] .work-subtitle {
     gap: 18px;
   }
 
-  .patent-item {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .patent-number::after {
-    display: none;
-  }
 }
