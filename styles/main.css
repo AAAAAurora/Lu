@@ -343,8 +343,7 @@ p {
 }
 
 .work-figure img,
-.work-figure video,
-.video-placeholder {
+.work-figure video {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 6px;
@@ -357,15 +356,9 @@ p {
 }
 
 .work:hover .work-figure img,
-.work:hover .work-figure video,
-.work:hover .video-placeholder {
+.work:hover .work-figure video {
   border-color: rgba(139, 211, 220, 0.55);
   filter: brightness(1.06);
-}
-
-.video-placeholder {
-  aspect-ratio: 16 / 9;
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .work-figure img {

@@ -80,8 +80,8 @@
           <span class="lang en">I am currently a Ph.D. student at the <strong class="intro-emphasis">School of Artificial Intelligence, Shenzhen University</strong>, advised by <strong class="intro-emphasis">Professor Jianqiang Li</strong>.</span>
           <span class="lang zh">研究方向包括<strong class="intro-emphasis">具身智能</strong>、<strong class="intro-emphasis">机器人环境感知</strong>、<strong class="intro-emphasis">同时定位与建图</strong>等，主要关注机器人在复杂三维环境中的感知、建图与语义理解。</span>
           <span class="lang en">My research interests include <strong class="intro-emphasis">embodied intelligence</strong>, <strong class="intro-emphasis">robotic environmental perception</strong>, and <strong class="intro-emphasis">simultaneous localization and mapping</strong>, with a focus on robotic perception, mapping, and semantic understanding in complex 3D environments.</span>
-          <span class="lang zh">目前已在人工智能及机器人领域顶级会议 <strong class="intro-emphasis">ICRA 2026</strong> 发表论文 1 篇，在投顶刊1篇，在投顶会2篇，已提交发明专利申请 2 项，目前处于审查阶段。</span>
-          <span class="lang en">I have published one paper at <strong class="intro-emphasis">ICRA 2026</strong>, a top conference in artificial intelligence and robotics; one paper is under review at a top journal, two papers are under review at top conferences, and two invention patent applications have been submitted and are currently under examination.</span>
+          <span class="lang zh">目前已有论文被人工智能领域顶级会议 <strong class="intro-emphasis">NeurIPS 2026</strong> 录用，并在机器人领域顶级会议 <strong class="intro-emphasis">ICRA 2026</strong> 发表论文 1 篇；此外，还有论文在顶级期刊与会议审稿中。已提交发明专利申请 2 项，目前处于审查阶段。</span>
+          <span class="lang en">I have a paper accepted at <strong class="intro-emphasis">NeurIPS 2026</strong> and one paper published at <strong class="intro-emphasis">ICRA 2026</strong>, with additional papers under review at leading journals and conferences. Two invention patent applications have been submitted and are currently under examination.</span>
         </p>
         <p class="keywords">
           <span class="lang zh">具身智能 · 机器人环境感知 · 同时定位与建图 · 三维语义场景理解</span>
@@ -141,8 +141,41 @@
           <div class="work-text">
             <p class="work-index">
               <span class="publication-label">
-                <span class="lang zh">论文 1 · ICRA 2026</span>
-                <span class="lang en">Publication 1 · ICRA 2026</span>
+                <span class="lang zh">论文 1 · NeurIPS 2026 · 已录用</span>
+                <span class="lang en">Publication 1 · NeurIPS 2026 · Accepted</span>
+              </span>
+            </p>
+            <h3>Concord-SLAM: Cross-Render Concordance for Boundary-Native Semantic Gaussian SLAM</h3>
+            <p class="work-subtitle">
+              <span class="lang zh">跨渲染一致性与边界原生建模驱动的语义高斯 SLAM</span>
+            </p>
+            <div class="paper-tags" aria-label="论文关键词">
+              <span>Semantic Gaussian SLAM</span>
+              <span>Cross-Render Concordance</span>
+              <span>Boundary-Aware Mapping</span>
+            </div>
+            <p>
+              <span class="lang zh">Concord-SLAM 面向 RGB-D 语义高斯 SLAM，将同一高斯地图渲染得到的语义、深度与法向信息视为相互关联的场景证据。跨渲染一致性模块（CRC）利用几何结构引导语义残差校正，并根据局部几何可靠性调整监督，缓解物体边界附近的语义错位与类别混合。</span>
+              <span class="lang en">Concord-SLAM treats semantic, depth, and normal renderings from a shared Gaussian map as coupled scene evidence. Cross-Render Concordance (CRC) uses geometry-guided semantic residual correction and reliability-aware supervision to reduce boundary misalignment and semantic mixing.</span>
+              <span class="lang zh">边界原生高斯增生模块（BNS）在覆盖不足的语义边界邻域主动插入新高斯，使边界两侧获得更独立的表示。Replica 与 ScanNet 实验表明，该方法提升了语义建图与重建质量，同时保持有竞争力的相机跟踪性能。</span>
+              <span class="lang en">Boundary-Native Splatting (BNS) inserts new Gaussians near under-covered semantic boundaries, helping separate the two sides during map growth. Experiments on Replica and ScanNet demonstrate improved semantic mapping and reconstruction with competitive camera tracking.</span>
+            </p>
+            <a class="paper-link" href="concord-slam.html">
+              <span class="lang zh">查看论文详情</span>
+              <span class="lang en">View Details</span>
+            </a>
+          </div>
+          <div class="work-figure">
+            <img src="assets/concord-slam-flow.png" alt="Concord-SLAM 方法流程图：跨渲染一致性与边界原生高斯增生" />
+          </div>
+        </article>
+
+        <article class="work">
+          <div class="work-text">
+            <p class="work-index">
+              <span class="publication-label">
+                <span class="lang zh">论文 2 · ICRA 2026</span>
+                <span class="lang en">Publication 2 · ICRA 2026</span>
               </span>
             </p>
             <h3>MTE-SLAM: Multi-Tier Feature Fusion for Efficient Neural Semantic SLAM</h3>
@@ -178,8 +211,8 @@
           <div class="work-text">
             <p class="work-index">
               <span class="publication-label">
-                <span class="lang zh">论文 2 · Pattern Recognition</span>
-                <span class="lang en">Publication 2 · Pattern Recognition</span>
+                <span class="lang zh">论文 3 · Pattern Recognition</span>
+                <span class="lang en">Publication 3 · Pattern Recognition</span>
               </span>
             </p>
             <h3>Hierarchical Multi-View Alignment with Adaptive Prototype Compression</h3>
@@ -207,7 +240,6 @@
               src="assets/multiview-flow.png"
               alt="层次化多视图对齐与自适应原型压缩流程图"
             />
-            <div class="video-placeholder" aria-hidden="true"></div>
           </div>
         </article>
       </section>
@@ -270,6 +302,20 @@
           <span class="lang en">Honors</span>
         </h2>
         <ul class="award-list">
+          <li>
+            <span>
+              <span class="lang zh">博士研究生国家奖学金</span>
+              <span class="lang en">National Scholarship for Doctoral Students</span>
+            </span>
+            <time>2026</time>
+          </li>
+          <li>
+            <span>
+              <span class="lang zh">深圳大学拔尖创新人才奖学金</span>
+              <span class="lang en">Shenzhen University Top Innovative Talent Scholarship</span>
+            </span>
+            <time>2026</time>
+          </li>
           <li>
             <span>
               <span class="lang zh">深圳大学拔尖创新人才奖学金二等奖</span>

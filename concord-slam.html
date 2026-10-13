@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concord-SLAM | 卢丹琪</title>
+    <meta
+      name="description"
+      content="Concord-SLAM: Cross-Render Concordance for Boundary-Native Semantic Gaussian SLAM 论文详情。"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body
+    class="detail-page"
+    data-lang="zh"
+    data-title-zh="Concord-SLAM | 卢丹琪"
+    data-title-en="Concord-SLAM | Danqi Lu"
+  >
+    <header class="site-header">
+      <a class="brand" href="index.html#top">
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="主导航">
+          <a href="index.html#intro">
+            <span class="lang zh">个人简介</span>
+            <span class="lang en">Introduction</span>
+          </a>
+          <a href="index.html#education">
+            <span class="lang zh">学习经历</span>
+            <span class="lang en">Education</span>
+          </a>
+          <a href="index.html#works">
+            <span class="lang zh">研究成果</span>
+            <span class="lang en">Publications</span>
+          </a>
+          <a href="index.html#patents">
+            <span class="lang zh">专利</span>
+            <span class="lang en">Patents</span>
+          </a>
+          <a href="index.html#awards">
+            <span class="lang zh">获奖情况</span>
+            <span class="lang en">Honors</span>
+          </a>
+        </nav>
+        <div class="language-switch" aria-label="语言切换">
+          <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <a class="back-link" href="index.html#works">
+          <span class="lang zh">返回研究成果</span>
+          <span class="lang en">Back to Publications</span>
+        </a>
+        <h1>Concord-SLAM: Cross-Render Concordance for Boundary-Native Semantic Gaussian SLAM</h1>
+        <div class="detail-meta-row">
+          <p class="detail-meta">
+            <span class="lang zh">论文 1 · NeurIPS 2026 · 已录用 · 语义高斯 SLAM</span>
+            <span class="lang en">Publication 1 · NeurIPS 2026 · Accepted · Semantic Gaussian SLAM</span>
+          </p>
+          <a class="detail-pdf-link" href="assets/concord-slam-neurips2026.pdf" target="_blank" rel="noopener">
+            <span class="lang zh">打开论文 PDF</span>
+            <span class="lang en">Open PDF</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="detail-content" aria-label="论文详情">
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">论文概述</span>
+            <span class="lang en">Overview</span>
+          </h2>
+          <p>
+            <span class="lang zh">Concord-SLAM 面向 RGB-D 语义高斯 SLAM，针对物体边界附近的高斯跨界扩张、边界模糊和语义泄漏问题，联合约束渲染优化与地图增生。框架将同一高斯场生成的语义、深度与法向渲染视为关联证据，利用它们之间的结构差异改善地图的语义与几何一致性。</span>
+            <span class="lang en">Concord-SLAM is an RGB-D semantic Gaussian SLAM framework that addresses cross-boundary Gaussian expansion, blurred boundaries, and semantic leakage through rendering optimization and map growth. It treats semantic, depth, and normal renderings from the same Gaussian field as coupled evidence and uses their structural discrepancies to improve semantic-geometric coherence.</span>
+          </p>
+          <p>
+            <span class="lang zh">跨渲染一致性模块（CRC）结合渲染语义特征、深度和深度导出的法向，预测语义残差，并利用局部几何可靠性构造软监督目标。边界原生高斯增生模块（BNS）在常规透明度与深度残差增生规则之外，引入语义边界插入掩码，在覆盖不足的边界邻域补充高斯基元，使边界两侧在建图过程中获得更独立的表示。</span>
+            <span class="lang en">Cross-Render Concordance (CRC) combines rendered semantic features, depth, and depth-derived normals to predict a semantic residual and builds soft supervision targets using local geometric reliability. Boundary-Native Splatting (BNS) augments opacity- and depth-residual-based growth with a semantic-boundary insertion mask, adding Gaussians in under-covered boundary neighborhoods to better separate the two sides during mapping.</span>
+          </p>
+          <p>
+            <span class="lang zh">在 Replica 与 ScanNet 数据集上的实验表明，Concord-SLAM 能够提升语义建图与场景重建质量，同时保持有竞争力的相机跟踪性能。</span>
+            <span class="lang en">Experiments on Replica and ScanNet demonstrate improved semantic mapping and scene reconstruction while maintaining competitive camera tracking performance.</span>
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">方法流程</span>
+            <span class="lang en">Method Pipeline</span>
+          </h2>
+          <div class="detail-media">
+            <img src="assets/concord-slam-flow.png" alt="Concord-SLAM 方法流程图：跨渲染一致性与边界原生高斯增生" />
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h2>
+            <span class="lang zh">关键贡献</span>
+            <span class="lang en">Key Contributions</span>
+          </h2>
+          <ul class="detail-list">
+            <li>
+              <span class="lang zh">提出边界原生语义高斯 SLAM 框架，将同一地图的多种渲染结果之间的不一致作为地图优化的内在信号。</span>
+              <span class="lang en">Introduces a boundary-native semantic Gaussian SLAM framework that uses disagreement among renderings of a shared map as an intrinsic refinement signal.</span>
+            </li>
+            <li>
+              <span class="lang zh">设计跨渲染一致性模块，通过几何引导的语义残差校正与可靠性感知监督改善语义边界对齐。</span>
+              <span class="lang en">Designs CRC to improve semantic boundary alignment through geometry-guided residual correction and reliability-aware supervision.</span>
+            </li>
+            <li>
+              <span class="lang zh">设计边界原生高斯增生策略，在覆盖不足的语义边界邻域主动插入高斯，改善边界的表示。</span>
+              <span class="lang en">Designs BNS to improve boundary representation by actively inserting Gaussians in under-covered semantic boundary neighborhoods.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        ©
+        <span class="lang zh">卢丹琪</span>
+        <span class="lang en">Danqi Lu</span>
+      </span>
+      <span>
+        <span class="lang zh">深圳大学人工智能学院</span>
+        <span class="lang en">School of Artificial Intelligence, Shenzhen University</span>
+      </span>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
