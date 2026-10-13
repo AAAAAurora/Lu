@@ -776,13 +776,14 @@ body[data-lang="en"] .work-subtitle {
   color: var(--ink);
 }
 
-.theme-option[aria-pressed="true"] {
+:root[data-theme="dark"] .theme-option[data-set-theme="dark"],
+:root[data-theme="light"] .theme-option[data-set-theme="light"] {
   border-color: var(--selection-ring);
   background: var(--selection);
   color: var(--accent);
 }
 
-:root[data-theme="light"] .theme-option[data-set-theme="light"][aria-pressed="true"] {
+:root[data-theme="light"] .theme-option[data-set-theme="light"] {
   border-color: #d5ab56;
   background: #f7e5b6;
   color: #845000;
