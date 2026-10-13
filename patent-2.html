@@ -8,8 +8,8 @@
       name="description"
       content="基于多层级特征融合与冗余抑制的高效神经隐式语义 SLAM 方法。"
     />
-    <script src="scripts/theme.js?v=20261013-theme"></script>
-    <link rel="stylesheet" href="styles/main.css?v=20261013-authors" />
+    <script src="scripts/theme.js?v=20261013-theme-selector"></script>
+    <link rel="stylesheet" href="styles/main.css?v=20261013-theme-selector" />
   </head>
   <body
     class="detail-page"
@@ -156,23 +156,31 @@
       </span>
     </footer>
 
-    <button class="theme-toggle" id="theme-toggle" type="button">
-      <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <circle cx="12" cy="12" r="4" />
-        <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
-      </svg>
-      <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" />
-      </svg>
-      <span class="theme-label-day">
-        <span class="lang zh">日间模式</span>
-        <span class="lang en">Day mode</span>
+    <div class="theme-switch" role="group" aria-labelledby="theme-switch-label">
+      <span class="visually-hidden" id="theme-switch-label">
+        <span class="lang zh">显示模式</span>
+        <span class="lang en">Appearance</span>
       </span>
-      <span class="theme-label-night">
-        <span class="lang zh">夜间模式</span>
-        <span class="lang en">Night mode</span>
-      </span>
-    </button>
+      <button class="theme-option" type="button" data-set-theme="light" aria-pressed="false">
+        <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+        </svg>
+        <span class="visually-hidden">
+          <span class="lang zh">日间模式</span>
+          <span class="lang en">Day mode</span>
+        </span>
+      </button>
+      <button class="theme-option" type="button" data-set-theme="dark" aria-pressed="true">
+        <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z" />
+        </svg>
+        <span class="visually-hidden">
+          <span class="lang zh">夜间模式</span>
+          <span class="lang en">Night mode</span>
+        </span>
+      </button>
+    </div>
 
     <script src="scripts/main.js"></script>
   </body>

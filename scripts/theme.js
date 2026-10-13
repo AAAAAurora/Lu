@@ -5,6 +5,9 @@
   function applyTheme(theme, persist = false) {
     const nextTheme = theme === "light" ? "light" : "dark";
     root.dataset.theme = nextTheme;
+    document.querySelectorAll("[data-set-theme]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.setTheme === nextTheme));
+    });
     if (persist) {
       try {
         localStorage.setItem(storageKey, nextTheme);
@@ -21,8 +24,9 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("theme-toggle")?.addEventListener("click", () => {
-      applyTheme(root.dataset.theme === "light" ? "dark" : "light", true);
+    applyTheme(root.dataset.theme);
+    document.querySelectorAll("[data-set-theme]").forEach((button) => {
+      button.addEventListener("click", () => applyTheme(button.dataset.setTheme, true));
     });
   }, { once: true });
 
