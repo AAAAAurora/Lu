@@ -13,12 +13,9 @@
   --control-inset: rgba(139, 211, 220, 0.08);
   --selection: rgba(139, 211, 220, 0.2);
   --selection-ring: rgba(139, 211, 220, 0.62);
-  --hover-surface: rgba(255, 255, 255, 0.035);
   --accent-line: rgba(139, 211, 220, 0.42);
-  --media-line: rgba(139, 211, 220, 0.55);
   --media-shadow: rgba(0, 0, 0, 0.18);
   --separator: rgba(169, 183, 194, 0.55);
-  --link-glow: rgba(139, 211, 220, 0.3);
   --toggle-surface: #142730;
   --author-brush: rgba(74, 181, 183, 0.38);
   --author-brush-edge: rgba(74, 181, 183, 0.12);
@@ -40,12 +37,9 @@
   --control-inset: rgba(21, 100, 117, 0.05);
   --selection: rgba(21, 100, 117, 0.12);
   --selection-ring: rgba(21, 100, 117, 0.4);
-  --hover-surface: rgba(255, 255, 255, 0.55);
   --accent-line: rgba(21, 100, 117, 0.36);
-  --media-line: rgba(21, 100, 117, 0.45);
   --media-shadow: rgba(33, 58, 73, 0.1);
   --separator: rgba(73, 98, 115, 0.55);
-  --link-glow: transparent;
   --toggle-surface: #ffffff;
   --author-brush: rgba(244, 194, 66, 0.64);
   --author-brush-edge: rgba(244, 194, 66, 0.22);
@@ -362,16 +356,6 @@ p {
   align-items: start;
   padding: 26px 0;
   border-top: 1px solid var(--line);
-  transition:
-    border-color 180ms ease,
-    background 180ms ease,
-    transform 180ms ease;
-}
-
-.work:hover {
-  border-color: var(--accent-line);
-  background: var(--hover-surface);
-  transform: translateY(-2px);
 }
 
 .work:first-of-type {
@@ -401,16 +385,6 @@ p {
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 14px 36px var(--media-shadow);
-  transition:
-    border-color 180ms ease,
-    filter 180ms ease,
-    transform 180ms ease;
-}
-
-.work:hover .work-figure img,
-.work:hover .work-figure video {
-  border-color: var(--media-line);
-  filter: brightness(1.06);
 }
 
 .work-figure img {
@@ -519,9 +493,7 @@ body[data-lang="en"] .work-subtitle {
   color: var(--accent);
   font-weight: 700;
   font-size: 16px;
-  transition:
-    color 160ms ease,
-    text-shadow 160ms ease;
+  transition: color 160ms ease;
 }
 
 .paper-link::after {
@@ -547,10 +519,6 @@ body[data-lang="en"] .work-subtitle {
 .paper-link:hover::after {
   opacity: 0.9;
   transform: scaleX(1.08);
-}
-
-.work:hover .paper-link {
-  text-shadow: 0 0 18px var(--link-glow);
 }
 
 .patent-list {
