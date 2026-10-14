@@ -521,9 +521,7 @@ body[data-lang="en"] .work-subtitle {
 
 .patent-item {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 32px;
+  grid-template-columns: minmax(0, 1fr);
   padding: 22px 0;
   border-top: 1px solid var(--line);
 }
@@ -556,15 +554,6 @@ body[data-lang="en"] .work-subtitle {
 
 .patent-body .paper-authors {
   margin-bottom: 0;
-}
-
-.patent-link {
-  display: inline-flex;
-  align-items: center;
-  justify-self: start;
-  gap: 8px;
-  margin-top: 0;
-  white-space: nowrap;
 }
 
 .detail-page .nav a {
