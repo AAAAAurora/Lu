@@ -58,7 +58,7 @@ body {
   background-color: var(--canvas);
   background-image:
     linear-gradient(var(--backdrop), var(--backdrop)),
-    url("../assets/background-mountain.jpg");
+    url("../assets/background-mountain.webp");
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
