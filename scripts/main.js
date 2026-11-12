@@ -57,3 +57,13 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage(localStorage.getItem("site-language") || "zh");
+
+document.querySelectorAll("[data-video-dialog]").forEach((button) => {
+  const dialog = document.getElementById(button.dataset.videoDialog);
+  if (!dialog) return;
+
+  button.addEventListener("click", () => dialog.showModal());
+  dialog.addEventListener("close", () => {
+    dialog.querySelector("video")?.pause();
+  });
+});

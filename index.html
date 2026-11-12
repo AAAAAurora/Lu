@@ -10,7 +10,7 @@
     />
     <link rel="preload" as="image" href="assets/background-mountain.webp" type="image/webp" fetchpriority="high" />
     <script src="scripts/theme.js?v=20261013-theme-selector"></script>
-    <link rel="stylesheet" href="styles/main.css?v=20261018-webp-background" />
+    <link rel="stylesheet" href="styles/main.css?v=20261112-publication-list" />
   </head>
   <body id="top" data-lang="zh" data-title-zh="卢丹琪 | 个人主页" data-title-en="Danqi Lu | Homepage">
     <header class="site-header">
@@ -132,99 +132,83 @@
         </h2>
 
         <article class="work">
+          <figure class="work-figure">
+            <img src="assets/concord-slam-flow.png?v=20261111" alt="Concord-SLAM 方法流程图：跨渲染一致性与边界原生高斯增生" />
+          </figure>
           <div class="work-text">
-            <p class="work-index">
-              <span class="publication-label">
-                <span class="lang zh">论文 1 · NeurIPS 2026 · 已录用</span>
-                <span class="lang en">Publication 1 · NeurIPS 2026 · Accepted</span>
-              </span>
-            </p>
+            <div class="publication-badges">
+              <span class="publication-venue">NeurIPS 2026</span>
+              <span class="publication-level">CCF A</span>
+              <span class="publication-level">CSRankings</span>
+              <span class="publication-level"><span class="lang zh">人工智能领域顶会</span><span class="lang en">Top Conference in Artificial Intelligence</span></span>
+            </div>
             <h3>Concord-SLAM: Cross-Render Concordance for Boundary-Native Semantic Gaussian SLAM</h3>
             <p class="paper-authors"><strong class="author-self">Danqi Lu</strong>, <span>Changxin Huang</span>, <span>Jianqiang Li</span></p>
-            <p class="work-subtitle">
-              <span class="lang zh">跨渲染一致性与边界原生建模驱动的语义高斯 SLAM</span>
-            </p>
             <div class="paper-tags" aria-label="论文关键词">
               <span>Semantic Gaussian SLAM</span>
               <span>Cross-Render Concordance</span>
               <span>Boundary-Aware Mapping</span>
             </div>
-            <p>
-              <span class="lang zh">Concord-SLAM 面向 RGB-D 语义高斯 SLAM，将同一高斯地图渲染得到的语义、深度与法向信息视为相互关联的场景证据。跨渲染一致性模块（CRC）利用几何结构引导语义残差校正，并根据局部几何可靠性调整监督，缓解物体边界附近的语义错位与类别混合。</span>
-              <span class="lang en">Concord-SLAM treats semantic, depth, and normal renderings from a shared Gaussian map as coupled scene evidence. Cross-Render Concordance (CRC) uses geometry-guided semantic residual correction and reliability-aware supervision to reduce boundary misalignment and semantic mixing.</span>
-              <span class="lang zh">边界原生高斯增生模块（BNS）在覆盖不足的语义边界邻域主动插入新高斯，使边界两侧获得更独立的表示。Replica 与 ScanNet 实验表明，该方法提升了语义建图与重建质量，同时保持有竞争力的相机跟踪性能。</span>
-              <span class="lang en">Boundary-Native Splatting (BNS) inserts new Gaussians near under-covered semantic boundaries, helping separate the two sides during map growth. Experiments on Replica and ScanNet demonstrate improved semantic mapping and reconstruction with competitive camera tracking.</span>
-            </p>
-          </div>
-          <div class="work-figure work-figure-single">
-            <img src="assets/concord-slam-flow.png?v=20261111" alt="Concord-SLAM 方法流程图：跨渲染一致性与边界原生高斯增生" />
+            <div class="publication-actions">
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z" /><path d="M14 3v5h5M8 13h8M8 17h6" /></svg><span>Paper</span></a>
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 7H5v6h4v4H4M19 7h-4v6h4v4h-5" /></svg><span>Cite</span></a>
+            </div>
           </div>
         </article>
 
         <article class="work">
+          <figure class="work-figure">
+            <img src="assets/mte-slam-flow.png" alt="MTE-SLAM 方法流程图" />
+          </figure>
           <div class="work-text">
-            <p class="work-index">
-              <span class="publication-label">
-                <span class="lang zh">论文 2 · ICRA 2026</span>
-                <span class="lang en">Publication 2 · ICRA 2026</span>
-              </span>
-            </p>
+            <div class="publication-badges">
+              <span class="publication-venue">ICRA 2026</span>
+              <span class="publication-level">CCF B</span>
+              <span class="publication-level">CSRankings</span>
+              <span class="publication-level"><span class="lang zh">机器人领域顶会</span><span class="lang en">Top Conference in Robotics</span></span>
+            </div>
             <h3>MTE-SLAM: Multi-Tier Feature Fusion for Efficient Neural Semantic SLAM</h3>
             <p class="paper-authors"><strong class="author-self">Danqi Lu</strong>, <span>Changxin Huang</span>, <span>Zhuangzhuang Chen</span>, <span>Zhiliang Lin</span>, <span>Dachong Li</span>, <span>Yanbin Chang</span>, <span>Jianqiang Li</span></p>
-            <p class="work-subtitle">
-              <span class="lang zh">面向高效神经语义 SLAM 的多层级特征融合方法</span>
-            </p>
             <div class="paper-tags" aria-label="论文关键词">
               <span>Semantic SLAM</span>
               <span>Neural Implicit Mapping</span>
               <span>Feature Fusion</span>
             </div>
-            <p>
-              <span class="lang zh">该工作提出面向 RGB-D 语义 SLAM 的 MTE-SLAM 框架，通过多层级特征融合将几何、语义与外观信息在全局和局部尺度上协同建模。全局模块利用跨模态注意力增强场景级语义一致性，局部模块通过邻域连续性与动态门控改善物体边界、细小结构和语义区域的清晰度。</span>
-              <span class="lang en">MTE-SLAM is an RGB-D semantic SLAM framework that jointly models geometry, semantics, and appearance through multi-tier feature fusion, improving boundary clarity and fine structural details in semantic maps.</span>
-              <span class="lang zh">为降低在线建图中的冗余特征累积，论文设计了特征冗余抑制模块，根据特征重要性和时序变化自适应压缩表示。在 Replica 和 ScanNet 数据集上的实验显示，该方法在跟踪、重建、语义分割与运行效率之间取得良好平衡，并在语义神经隐式 SLAM 系统中实现最高可达 4 倍的速度提升。</span>
-              <span class="lang en">A feature redundancy suppressor further compresses representations during online mapping. Experiments on Replica and ScanNet show strong tracking, reconstruction, semantic accuracy, and up to a 4x speed improvement.</span>
-            </p>
-          </div>
-          <div class="work-figure">
-            <img src="assets/mte-slam-flow.png" alt="MTE-SLAM 方法流程图" />
-            <video controls preload="metadata">
-              <source src="assets/mte-slam-demo.mp4" type="video/mp4" />
-              当前浏览器不支持视频播放。
-            </video>
+            <div class="publication-actions">
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z" /><path d="M14 3v5h5M8 13h8M8 17h6" /></svg><span>Paper</span></a>
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 7H5v6h4v4H4M19 7h-4v6h4v4h-5" /></svg><span>Cite</span></a>
+              <button class="publication-action" type="button" data-video-dialog="mte-slam-video" aria-haspopup="dialog" aria-controls="mte-slam-video">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m7 4 14 8-14 8Z" /></svg>
+                <span class="lang zh">演示视频</span><span class="lang en">Video</span>
+              </button>
+            </div>
           </div>
         </article>
 
         <article class="work">
+          <figure class="work-figure">
+            <img
+              src="assets/multiview-flow.png"
+              alt="层次化多视图对齐与自适应原型压缩流程图"
+            />
+          </figure>
           <div class="work-text">
-            <p class="work-index">
-              <span class="publication-label">
-                <span class="lang zh">论文 3 · Pattern Recognition</span>
-                <span class="lang en">Publication 3 · Pattern Recognition</span>
-              </span>
-            </p>
+            <div class="publication-badges">
+              <span class="publication-venue">Pattern Recognition</span>
+              <span class="publication-level"><span class="lang zh">中科院一区 Top</span><span class="lang en">CAS Q1 Top</span></span>
+              <span class="publication-level"><span class="lang zh">模式识别领域顶刊</span><span class="lang en">Top Journal in Pattern Recognition</span></span>
+            </div>
             <h3>Hierarchical Multi-View Alignment with Adaptive Prototype Compression</h3>
             <p class="paper-authors"><strong class="author-self">Danqi Lu</strong>, <span>Bin Xu</span>, <span>Changxin Huang</span>, <span>Zhuangzhuang Chen</span>, <span>Zhiliang Lin</span>, <span>Hao Yang</span>, <span>Xiang Liu</span>, <span>Jianqiang Li</span></p>
-            <p class="work-subtitle">
-              <span class="lang zh">面向鲁棒语义场景理解的层次化多视图对齐与自适应原型压缩</span>
-            </p>
             <div class="paper-tags" aria-label="论文关键词">
               <span>Multi-view Learning</span>
               <span>Semantic Scene Understanding</span>
               <span>Prototype Compression</span>
             </div>
-            <p>
-              <span class="lang zh">该研究将语义三维场景理解建模为层次化多视图对齐问题，围绕几何结构、视觉外观与语义线索之间的分布差异和空间可靠性变化展开。方法在全局层面使用跨视图注意力完成几何引导的语义增强与语义感知的外观细化，在局部层面通过空间自适应门控动态调节不同视图的贡献。</span>
-              <span class="lang en">This work treats semantic 3D scene understanding as a hierarchical multi-view alignment problem across geometry, appearance, and semantic cues.</span>
-              <span class="lang zh">针对迭代优化过程中出现的特征漂移和冗余增长，工作引入自适应原型压缩机制，将新特征锚定到紧凑且动态更新的原型集合中。实验表明，该框架能够提升语义保真度、结构连贯性与运行效率，为可扩展的多视图语义表示学习提供了稳定方案。</span>
-              <span class="lang en">It combines global cross-view attention, local adaptive gating, and prototype compression to reduce feature drift and redundancy while improving semantic fidelity, structural coherence, and efficiency.</span>
-            </p>
-          </div>
-          <div class="work-figure work-figure-single">
-            <img
-              src="assets/multiview-flow.png"
-              alt="层次化多视图对齐与自适应原型压缩流程图"
-            />
+            <div class="publication-actions">
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z" /><path d="M14 3v5h5M8 13h8M8 17h6" /></svg><span>Paper</span></a>
+              <a class="publication-action" href="#works"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 7H5v6h4v4H4M19 7h-4v6h4v4h-5" /></svg><span>Cite</span></a>
+            </div>
           </div>
         </article>
       </section>
@@ -351,6 +335,19 @@
       </section>
     </main>
 
+    <dialog class="publication-video-dialog" id="mte-slam-video" aria-labelledby="mte-video-title">
+      <div class="publication-video-header">
+        <h2 id="mte-video-title"><span class="lang zh">MTE-SLAM 演示视频</span><span class="lang en">MTE-SLAM Demo Video</span></h2>
+        <form method="dialog">
+          <button class="publication-action" type="submit"><span class="lang zh">关闭</span><span class="lang en">Close</span></button>
+        </form>
+      </div>
+      <video controls playsinline preload="none">
+        <source src="assets/mte-slam-demo.mp4" type="video/mp4" />
+        <span class="lang zh">当前浏览器不支持视频播放。</span><span class="lang en">Your browser does not support video playback.</span>
+      </video>
+    </dialog>
+
     <footer class="site-footer">
       <span>
         ©
@@ -389,6 +386,6 @@
       </button>
     </div>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js?v=20261112-publication-list"></script>
   </body>
 </html>
